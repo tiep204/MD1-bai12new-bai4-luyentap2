@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background: black;
+    }
+    h1{
+        text-align: center;
+        color: gainsboro;
+    }
+    input{
+        margin-left: 570px;
+    }
+    button{
+        color: black;
+    }
+</style>
+<h1>nhap R vao day</h1>
+<input id="nhapVao" type="number">
+<button onclick="bamVao()">tinh</button>
+<h1 id="ketQua"></h1>
+<h1 id="ketQua1"></h1>
+<body>
+<script>
+    function bamVao(){
+        let r = +document.getElementById('nhapVao').value;
+         dapan = Math.pow(r,2)*Math.PI
+        dapan1 = r * 2 * Math.PI
+        document.getElementById('ketQua').innerHTML= 'dien tich cua hinh tron la: ' + Math.round(dapan)
+        document.getElementById('ketQua1').innerHTML= 'chu vi cua hinh tron la: ' +  Math.round(dapan1)
+    }
+</script>
+</body>
+</html>

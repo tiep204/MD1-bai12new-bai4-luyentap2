@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>GIA TRI BINH PHUONG</h1>
+<input id="nhap" type="text"><br><br>
+<button onclick="tinh()">tinh</button>
+<h1 id="ht"></h1>
+<script>
+
+    function nhanDoi(x){
+        X = Math.pow(x,2)
+        return X
+    }
+    function tinh(){
+        let so =+document.getElementById("nhap").value;
+        kq = nhanDoi(so)
+        document.getElementById('ht').innerHTML = 'gia tri sau khi binh phuong la: ' + kq
+        return kq;
+
+    }
+
+// function tinh(){
+//     let x=+document.getElementById("nhap").value;
+//     X = x*x
+//     document.getElementById('ht').innerHTML= X
+// }
+
+
+</script>
+</body>
+</html>

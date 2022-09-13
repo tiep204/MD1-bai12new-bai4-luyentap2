@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>kiem tra so not so</h1>
+<input id="kiemtra" type="text">
+<button onclick="kieu()">Bam</button>
+<h1 id="hienthi"></h1>
+<body>
+<script>
+  function kieu(){
+    let so = document.getElementById('kiemtra').value;
+    if (so >=0 || so<0){
+      document.getElementById('hienthi').innerHTML = 'True'
+    }else{
+      document.getElementById('hienthi').innerHTML = 'False'
+    }
+
+  }
+</script>
+
+</body>
+</html>

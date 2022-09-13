@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--  Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có-->
+<!--  nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+</head>
+<body>
+<button onclick="check()"></button>
+<script>
+    let arr=[]
+    let kiTu=prompt("nhap mang ki tu vao day")
+    arr.push(kiTu)
+    console.log('arr=',arr)
+    let kiemTra=prompt("nhap ki tu muons kiem tra lan xuat hien")
+    console.log('kiem tra= ', kiemTra)
+
+    function check(){
+        for (let i = 0; i < arr.length; i++) {
+            if(kiemTra===arr[i]){
+                console.log(arr)
+                alert('So lan xuat hien trong mang la =   ' + (i+1))
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

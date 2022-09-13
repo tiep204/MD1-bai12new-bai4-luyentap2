@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh giai thua</title>
+</head>
+<h1>tinh giai thua</h1>
+<input id="giaiThua" type="number">
+<button onclick="tinhGiaiThua()">tinh</button>
+<h1 id="dapAn"></h1>
+<body>
+<script>
+function tinhGiaiThua(){
+    let n=+document.getElementById('giaiThua').value;
+    dapan = n*(n-1);
+    document.getElementById('dapAn').innerHTML = 'dap an cua ban la: '+ dapan
+}
+</script>
+</body>
+</html>
